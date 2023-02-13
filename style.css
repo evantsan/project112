@@ -1,0 +1,35 @@
+body{
+    background-color: aquamarine !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+#bt{
+    letter-spacing: 7px;
+    font-size: 35px;
+    border-radius: 15px;
+
+}
+.lab
+{
+  color: rgb(81, 44, 216);
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+#camera , #result
+{
+  border: 8px ridge rgb(255, 4, 217);
+  width: 350px;
+  height: 300px; 
+}
+#result_gesture_name  
+{
+  color: black;
+}
+.emoji
+{
+  font-size:48px;
+}
+.gesture_name
+{
+  font-size: 40px;
+}

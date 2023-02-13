@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>GESTURE WEB APP</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"></head>
+    <body>
+        <div class="container">
+            <center>
+            <h1 class="btn btn-warning" id="bt">GESTURE WEB APP
+                <br><span>&#128076;</span><span>&#128077;</span><span>&#9996;</span><span>&#9994;</span><span>&#128075;</span><span>&#129304;</span>
+            </h1>
+            <h2>Take a selfie of a gesture to know its meaning</h2>
+            <h3>On the following gestures the model is trained - </h3>
+            <h1><span>&#9996;</span>|<span>&#128076;</span>|<span>&#128077;</span>|<span>&#128079;</span></h1>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label class="lab">Camera View - </label>
+              <div id="camera"></div>
+              <br><br>
+              <button class="btn btn-info" onclick="capture()">Capture Image</button>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div>
+                    <label class="lab">Prediction - </label><br>
+                    <label id="result_gesture_name" class="gesture_name"></label><br>
+                    <label id="emoji1" class="emoji"></label>
+                  </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label class="lab">Snapshot View - </label>
+              <div id="result"></div>
+              <br><br>
+              <button class="btn btn-info" onclick="gest()">Predict Gesture</button>
+            </div>
+        </center>
+    </div>
+        <script src="main.js"></script>
+    </body>
+</html>
